@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgb(244 247 244);
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    height: 100px;
+  }
+  
+  img {
+   width: 11.5vw;
+  }
+  
+  nav {
+  
+    width: 12%;
+    height: 88vh; /* only for demonstration, should be removed */
+    background: #FFE599;
+    padding: 20px;
+    /* z-index: 1;
+    position: absolute; */
+    position: fixed;
+    
+    
+  }
+  
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  article {
+     text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: black;
+    height: 80vh; /* only for demonstration, should be removed */
+    overflow-y: auto;
+  }
+  
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #C9DAF8;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    left: 222px;
+
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 1500px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+      position: unset;
+    
+    }
+    .header{
+      font-size: 12px;
+    }
+    footer {
+      left: 0;
+    }
+
+  }
